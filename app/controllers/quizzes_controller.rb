@@ -2,8 +2,13 @@ class QuizzesController < ApplicationController
   before_action :set_quiz, only: [:show, :edit, :update, :destroy]
 
 
+
   
- 
+ def simulateur 
+  
+  render simulateur.html.erb
+   
+  end
   # GET /quizzes
   # GET /quizzes.json
   def index
