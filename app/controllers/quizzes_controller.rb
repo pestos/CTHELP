@@ -1,6 +1,11 @@
 class QuizzesController < ApplicationController
   before_action :set_quiz, only: [:show, :edit, :update, :destroy]
 
+
+  def questionnaire
+  
+  end
+
   # GET /quizzes
   # GET /quizzes.json
   def index
