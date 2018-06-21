@@ -6,8 +6,9 @@ class QuizzesController < ApplicationController
   
  def simulateur 
   
-  render simulateur.html.erb
-   
+  @quizzes = Quiz.all
+  render "/pages/simulateur.html"
+
   end
   # GET /quizzes
   # GET /quizzes.json

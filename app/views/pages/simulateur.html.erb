@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all',
-                                              'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<% @quizzes.each do |f| %>
 
-  <body>
-    <%= yield %>
-  </body>
-</html>
+<ul class="list-group">
+  <li class="list-group-item"><%=f.titrequiz %></li>
+  <img src="http://parlons-assurance-mutuelle.fr/wp-content/uploads/2012/10/retroviseur-brise.jpg" />
+  <br>
+  <button> <%= f.reponseoui %></button>
+  <button> <%= f.reponsenon %></button>
+  
+  
+  
+
+ 
+  
+  
+  <% end %>
